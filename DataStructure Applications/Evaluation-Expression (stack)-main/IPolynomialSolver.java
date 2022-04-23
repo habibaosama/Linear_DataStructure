@@ -1,15 +1,6 @@
-package lab4;
+interface IExpressionEvaluator {
 
-interface IPolynomialSolver {
-public void setPolynomial(char poly, int[][] terms);
-public String print(char poly);
-public void clearPolynomial(char poly);
+public String infixToPostfix(String expression);
 
-public float evaluatePolynomial(char poly, float value);
-
-public int[][] add(char poly1, char poly2);
-
-public int[][] subtract(char poly1, char poly2);
-
-public int[][] multiply(char poly1, char poly2);
+public int evaluate(String expression);
 }
