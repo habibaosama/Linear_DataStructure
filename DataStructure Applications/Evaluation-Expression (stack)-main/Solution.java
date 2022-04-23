@@ -76,12 +76,7 @@ class Node{
 
 
 
- interface IExpressionEvaluator {
 
-public String infixToPostfix(String expression);
-
-public int evaluate(String expression);
-}
 
 
 public class Evaluator  implements IExpressionEvaluator {
